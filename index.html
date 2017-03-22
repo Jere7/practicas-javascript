@@ -7,15 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-  $(document).ready(function(){
-    $('#MyButton').click(function(){
-       Alert("hello");
-    });
-  });
+  <input id="clickMe" type="button" value="clickme" />
+
+<script type="text/javascript" charset="utf-8">  
+  document.getElementById("clickMe").onclick = function () { alert('hello!'); };
 </script>
 
-<input type="button" value="javascript" id="MyButton" >
+
     
 </body>
 </html>
