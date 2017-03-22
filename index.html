@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.2.0.min.js"></script>    <!--add jquery-->
     <title>Document</title>
 </head>
 <body>  
@@ -11,11 +12,12 @@
   <div>
     <label for="num1">Number 1</label>
     <input id="num1" type="text" />
+   
   </div>
   </br>
   <div>
     <label for="num2">Number 2</label>
-    <input id="num2" type="text" />
+    <input id="num2" type="text" />  
   </div>
   </br>
   <div>
@@ -24,12 +26,27 @@
   </div>
   </br>
   <input id="clickMe" type="button" value="Run" />
+<script type="text/javascript"> 
+   $(document).ready(function(){
+    $('#clickMe').click(function(){
+      
+      var num1 = $('#num1');
+      var num2 = $('#num2');
+      var sum = $('#sum')
+      var sum = parseFloat(num1) + parseFloat(num2)
+      var result = $('#sum')
 
-<script type="text/javascript" charset="utf-8">  
-  document.getElementById("clickMe").onclick = function () { alert('hello!'); };
+      // sumar los numeros
+      // actualizar el input sum, con el valor del resultado       
+
+    });
+
+  });
+
+
+
+
 </script>
-
-
     
 </body>
 </html>
